@@ -1,0 +1,89 @@
+Responsive Webistes using HTML and CSS*
+
+Responsiveness - Hamari website devices ke according response kare.
+
+--> Screens
+Landscape - Width zyada & Height Kam for ex- Laptop
+Portrait - Height zyda & Width kam for ex- Mobile Phones
+
+--> Understanding units
+  - px          --> Fixed 
+  - %           --> Parent pe depend karta hai
+  - vw, vh      --> Screen-size pe depend karta hai
+  - vmax, vmin  --> vmax (mtlb jo bhi viewport maximum hai) hoga vw ke according mtlb jab mein width kam krunga ek time aayega
+                    jb height width se zyda hojayegi
+                    tb vo vh ke according lene lagega
+                    and vmin (mtlb jo bhi viewport minimum hai) hoga vh ke according ek point pe aake vw ke according lene lagega
+  - em, rem     --> em  --> parent ko jo properties denge utna times lega em lega
+                    rem --> screen-size pe depend krta hai aur 1 rem = 16px
+
+Note-
+vw - viewport width and vh - viewport eight
+vmax - viewport maximum and vmin - viewport minimum
+
+--> Layout of Webistes
+  - absolute vs flex
+
+Note-
+--> Agar mujhe y axis mein karna hai kch toh align-items 
+    align-items: center;
+
+--> Agar mujhe x axis mein karna hai kch toh justify-content 
+    justify-content: center, space evenly, space-around, space-between
+
+--> Agar mein chahta hu mere jo div hai vo shrink na ho screen ko chota krne pr toh mein kya krunga -
+    Parent ko flex-wrap: wrap;
+    property dunga yeh kya krega jese hi vo shrink hone wale honge 
+    tabhi child niche shift hojayega
+
+--> Display flex kya karta hai apke elements ko rows aur coloumn mein divide kar deta hai.
+
+--> Flexbox
+  - display flex
+  - aligning items in x and y axis
+  - flex direction
+  - flex wrap
+
+--> CSS media quaries --> Apki website apki screen ke size ke hisaab se apne behaviour ko change karle
+   - min height, min width
+   - min width, max width
+
+--> max width
+
+.box{
+    height: 300px;
+    width: 300px;
+    border: 5px solid black;
+    background-color: crimson;
+}
+
+@media (max-width:600px) {
+    .box{
+        background-color: royalblue;
+    }
+}
+
+600px tak background-color: royalblue rahega vrna isey zyda hone par background-color: crimson; krdega vo
+  
+Note-
+Maximum portrait devices ki width 550 se 600 pixel tak hi hoti h
+
+Key Points to keep in mind to make website Responsive-
+1. CSS Flexbox
+2. CSS units
+3. Responsive Typography - For ex jese font-size pixel mein dia kisi H1 ko toh usey kch farak nhi pdega screen par
+                           Toh use font size with vw
+4. Mobile First Approach
+5. Flexible Images and Media
+
+Remixicon.com --> github --> CDN Link Copy --> Upar head tag mein link krdo
+
+Main div ko height di - 100%
+Navbar ko height di - 100px
+
+100% - 100px kitna bachega hume nahi pata?
+toh we use calc(100% - 100px);
+
+ipconfig --> terminal par dalo
+ip address apne port se pehle dalo aur phone mein dekhlo apni website
+
