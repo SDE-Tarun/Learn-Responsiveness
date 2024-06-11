@@ -84,6 +84,8 @@ Navbar ko height di - 100px
 100% - 100px kitna bachega hume nahi pata?
 toh we use calc(100% - 100px);
 
-ipconfig --> terminal par dalo
+Ipconfig getifaddr en0/ ipconfig --> terminal par dalo
 ip address apne port se pehle dalo aur phone mein dekhlo apni website
+
+
 
