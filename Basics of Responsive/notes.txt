@@ -87,5 +87,6 @@ toh we use calc(100% - 100px);
 Ipconfig getifaddr en0/ ipconfig --> terminal par dalo
 ip address apne port se pehle dalo aur phone mein dekhlo apni website
 
-
-
+How to Override API response?
+Inspect --> Network Tab --> Fetch/XHR --> Name --> Right click on override content --> Sources --> Data --> Change it and Save --> Refresh page
+You will see response of API changes
